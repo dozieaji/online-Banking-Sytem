@@ -45,6 +45,7 @@ public class AccountController {
 		return "primaryAccount";
 	}
 
+	//Controller for saving account
 	@RequestMapping("/savingsAccount")
     public String savingsAccount(Model model, Principal principal) {
 		List<SavingsTransaction> savingsTransactionList = transactionService.findSavingsTransactionList(principal.getName());
@@ -56,7 +57,7 @@ public class AccountController {
 
         return "savingsAccount";
     }
-	
+	//Controler for deposit
 	@RequestMapping(value = "/deposit", method = RequestMethod.GET)
     public String deposit(Model model) {
         model.addAttribute("accountType", "");
