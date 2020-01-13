@@ -23,6 +23,8 @@ public interface UserService {
     
     User saveUser (User user); 
     
+    
+    //find list of all the users
     List<User> findUserList();
 
     void enableUser (String username);
