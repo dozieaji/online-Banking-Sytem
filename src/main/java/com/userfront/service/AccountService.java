@@ -7,6 +7,8 @@ import com.userfront.domain.PrimaryTransaction;
 import com.userfront.domain.SavingsAccount;
 import com.userfront.domain.SavingsTransaction;
 
+
+//performs all the actions
 public interface AccountService {
 	PrimaryAccount createPrimaryAccount();
     SavingsAccount createSavingsAccount();
